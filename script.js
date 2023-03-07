@@ -4,7 +4,9 @@ const slider = document.querySelector(".slider");
 const images = document.querySelectorAll(".image");
 const buttonContainer = document.querySelector(".button-container");
 
+
 let imgCount = 1;
+let last = imgCount;
 
 
 
@@ -30,7 +32,7 @@ round[0].style.backgroundColor = "white";
 round.forEach((round, i) => {
   round.addEventListener("click", () => {
     slider.style.transform = `translateX(-${(i) * 448}px)`;
-    imgCount = imgCount + 1;
+    imgCount = i + 1;
     removeBg();
     round.style.backgroundColor = "white";
   })
