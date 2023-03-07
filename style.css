@@ -17,6 +17,7 @@
 html {
     background-color: var(--bgl);
     font: 62.5%;
+    filter: invert(1);
 
 }
 
@@ -45,8 +46,8 @@ body {
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
+    width: 95%;
+    height: 90vh;
     background-color: var(--bgl);
     border-radius: 5rem;
     box-shadow: 0 0 1rem rgb(255, 255, 255);
@@ -70,7 +71,9 @@ body {
 .frame {
     border-radius: 3rem;
     width: 28rem;
+    box-shadow: 0 0 1rem rgb(255, 255, 255);
     overflow: hidden;
+
 
 }
 
@@ -87,6 +90,7 @@ body {
 
 .image {
     width: 100%;
+    filter: invert(1);
 }
 
 .bottom {
@@ -112,6 +116,8 @@ body {
     border: 0.1rem solid var(--borderl);
     transition: all 1s ease-in-out;
     cursor: pointer;
+    box-shadow: 0 0 0.3rem rgb(255, 255, 255);
+
 }
 
 
